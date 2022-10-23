@@ -8,7 +8,14 @@ from flask import (
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    
+    with app.app_context():
+        init_db()
+
+    return app
+
 
 @app.route("/")
 def index():
