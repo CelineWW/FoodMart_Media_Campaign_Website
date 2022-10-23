@@ -1,4 +1,12 @@
-from flask import Flask,render_template
+import os
+from flask import (
+    Flask,
+    render_template,
+    jsonify,
+    request,
+    redirect)
+from flsk_sqlalchemy import SQLAlchemy
+db = SQLAlchemy(app)
 
 app = Flask(__name__)
 
