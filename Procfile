@@ -1,1 +1,1 @@
-web: gunicorn foodmart.app:app
+web: gunicorn app:app

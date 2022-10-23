@@ -1,1 +1,1 @@
-FLASK_APP=foodmart/app.py flask run
+FLASK_APP=app.py flask run
