@@ -1,0 +1,1 @@
+FLASK_APP=foodmart/app.py flask run
