@@ -5,8 +5,8 @@ from flask import (
     jsonify,
     request,
     redirect)
-from flsk_sqlalchemy import SQLAlchemy
-db = SQLAlchemy(app)
+from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
 
